@@ -1,0 +1,238 @@
+/* Normal desktop(xl) :1200px. */
+@media (min-width: 1200px){
+
+
+}
+
+
+/* Normal desktop(lg) :992px. */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+.about-img {
+	padding-left: 47px;
+}
+.about-img::before {
+	right: -130px;
+}
+.about-img::after {
+	right: -130px;
+}
+.subtitle p {
+	font-size: 13px;
+}
+h3.heading {
+	font-size: 16px;
+}
+.single-service-text p {
+	font-size: 15px;
+}
+.hire-me-content h3 {
+	font-size: 14px;
+}
+.about-me1-content.mt-110 {
+	margin-top: 128px;
+}
+.portfolio-menu li {
+	margin-bottom: 10px;
+}
+}
+
+ 
+/* Tablet desktop(md) :768px. */
+@media (min-width: 768px) and (max-width: 991.98px) {
+.single-slider {
+	height: 315px;
+	padding-top: 50px;
+}
+.slider-text h1 {
+	font-size: 30px;
+}
+.slick-slide img {
+	width: 100%;
+}
+.slider-text h1 span {
+	font-size: 25px;
+}
+.slider-text h3 {
+	font-size: 20px;
+}
+.about-img::before {
+	right: -10px;
+	width: 15px;
+}
+.about-content p {
+	font-size: 12px;
+}
+.about-img img {
+	width: 100%;
+}
+.about-img {
+	padding-left: 0px;
+}
+.about-img::after {
+	right: -10px;
+	bottom: -10px;
+	height: 10px;
+}
+.about-content p {
+	font-size: 12px;
+	line-height: 20px;
+}
+.subtitle p {
+	font-size: 14px;
+}
+.section-title h2 {
+	font-size: 35px;
+}
+.beadcrumb-area {
+	height: 400px;
+	background-size: cover;
+}
+.about-me1-content.mt-110 {
+	margin-top: 50px;
+}
+.single-details {
+	padding: 25px;
+}
+.single-details p {
+	font-size: 13px;
+	line-height: 25px;
+}
+.single-details h3.heading {
+	font-size: 16px;
+}
+.portfolio-menu li {;
+	margin-bottom: 10px;
+}
+.social-contact {
+	margin-bottom: 20px;
+}
+}
+
+/* Small devices (landscape phones, 576px and up)*/ 
+@media (min-width: 480px) and (max-width: 767.98px) { 
+
+.team-members {
+	height: 500px!important;
+}
+.slider-text h1 {
+	font-size: 45px;
+}
+ 
+.slider-text h1 span {
+	font-size: 25px;
+}
+.slider-text h3 {
+	font-size: 20px;
+}
+.section-title h2{
+	font-size: 35px!importan;
+}
+.about-content a {
+	margin-bottom: 0px!important;
+	display: inline-block!important;
+	margin-left: 20px!important;
+}
+.hire-me-content h3 {
+	font-size: 14px;
+}
+.single-details {
+	padding: 50px!important;
+}
+.portfolio-menu li {
+	margin-bottom: 10px;
+}
+}
+
+
+/* Extra small devices portrait phones, less than 576px */ 
+@media (max-width: 767.98px) { 
+.team-members {
+	height: 400px;
+}
+.about-img::before {
+	display: none;
+}
+.about-img::after {
+	display: none;
+}
+.about-img {
+	padding: 0;
+	margin-bottom: 25px;
+}
+.about-img img{
+	width: 100%;
+}
+.copyright-text {
+	width: 100%;
+	text-align: center;
+}
+.copyright-text p {
+	margin:  0;
+}
+.footer-social-icon {
+	width: 100%;
+	text-align: center;
+}
+.footer-bottom{
+	height: 120px;
+ }
+.slider-text {
+	text-align: center;
+	width: 100%;
+}
+ .single-slider{
+ 	height: 300px;
+ 	padding-top: 0;
+ }
+ .slider-text h1 {
+	font-size: 35px;
+}
+.slider-text h1 span {
+	font-size: 20px;
+}
+.slider-text h3 {
+	font-size: 18px;
+}
+.about-content a {
+	margin-bottom: 20px;
+	display: block;
+	margin-left: 0;
+	text-align: center;
+}
+.subtitle p {
+	font-size: 13px;
+}
+.section-title h2{
+	font-size: 30px;
+}
+.counter-content {
+	margin-bottom: 50px;
+}
+.beadcrumb-area {
+	height: 260px;
+}
+.hire-me-content h3 {
+	display: inline;
+}
+.beadcrumb-title h2 {
+	font-size: 30px;
+}
+.about-me1-content {
+	margin-top: 50px;
+}
+.single-details {
+	padding: 30px 25px;
+}
+.single-team {
+	margin-bottom: 20px;
+}
+.portfolio-menu li {
+	margin-bottom: 10px;
+}
+.social-contact {
+	margin-bottom: 20px;
+}
+.contaict-form {
+	padding: 20px;
+}
+}

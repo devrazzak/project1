@@ -1,0 +1,1124 @@
+/*
+  Theme Name:  - Multipurpose HTML Template
+  Author: Abdur Razzak
+  Support: developerrazzak@gmail.com
+  Description: Portfolio Template
+  Version: 1.0
+*/
+
+/* CSS Index 
+----------------------------------------------------------------------
+1. HEADER AREA CSS
+
+----------------------------------------------------------------------*/
+
+
+
+/* Theme default css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+ body {
+  font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+
+}
+.img {
+	max-width: 100%;
+	transition: all 0.3s ease-out 0s;
+}
+.f-left {
+	float: left
+}
+.f-right {
+	float: right
+}
+.fix {
+	overflow: hidden
+}
+a,
+.button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+a:focus,
+.btn:focus,
+.button:focus,
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus,
+a:hover  {
+	text-decoration: none;
+	outline: 0;
+}
+a,
+button {
+	color: #18BA60;
+	outline: medium none;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #555555;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 700;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+h1 {
+	font-size: 55px;
+	font-weight: 700;
+}
+h2 {
+	font-size: 40px;
+}
+h3 {
+	font-size: 24px;
+}
+h4 {
+	font-size: 18px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 12px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none
+}
+p {
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.5;
+	color: #222222;
+	margin-bottom: 15px;
+}
+hr {
+	border-bottom: 1px solid #eceff8;
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0;
+}
+label {
+	color: #7e7e7e;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+*::-moz-selection {
+	background: #d6b161;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+*::-moz-placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+*::placeholder {
+	color: #aaa;
+	font-size: 14px;
+	opacity: 1;
+}
+
+/*==============----------------------------- 1. HEADER AREA CSS -----------------------------================*/
+.header-area{
+	height: 70px;
+}
+.header-logo a {
+	display: block;
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    color: #555555;
+    margin-top: 9px;
+}
+.sticky-menu .header-logo a{
+	color: #fff;
+}
+/*==============----------------------------- 1. MENU AREA CSS -----------------------------================*/
+.main-menu{
+    margin-right: 45px;
+    text-align: right;
+}
+.main-menu ul li {
+	display: inline-block;
+	position: relative;
+}
+.main-menu ul  li a{
+	color: #555555;
+	text-decoration: none;
+	display: block;
+	padding: 25px 20px;
+	font-size: 14px;
+	font-weight: 500;
+	transition: .3s;
+	text-transform: uppercase;
+}
+.main-menu ul li:hover a{
+	color: #aaaaaa;
+}
+.sticky-menu .main-menu ul  li a{
+	color: #000;
+}
+.sticky-menu .main-menu ul li:hover a{
+	color: #ffffff;
+}
+.main-menu ul li ul.submenu {
+	position: absolute;
+	width: 225px;
+	background: #ffffff;
+	padding: 10px 0px 20px 0px;
+	top: 110%;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: .5s;
+	z-index: 99;
+}
+.sticky-menu .main-menu ul li ul.submenu{
+	background: #aaaaaa;
+}
+.main-menu ul  li:hover> ul.submenu{
+	opacity: 1;
+	visibility: visible;
+	top: 98%;
+}
+.main-menu ul  li ul.submenu li{
+	display: block;
+	margin: 0;
+}
+.main-menu ul li ul.submenu li a {
+	color: #555555;
+	text-align: left;
+	padding: 7px 15px;
+	transition: .3s;
+}
+.sticky-menu .main-menu ul li ul.submenu li a {
+	color: #000;
+}
+.main-menu ul  li ul.submenu li:hover> a{
+	color: #aaaaaa;
+}
+.sticky-menu .main-menu ul  li ul.submenu li:hover> a{
+	color: #fff;
+}
+.main-menu ul li ul.submenu li ul.submenu{
+	left: 100%;
+	top: 0;
+}
+.mean-container .mean-bar {
+	position: absolute;
+	top: -43px;
+	background: none;
+}
+.mean-container a.meanmenu-reveal {
+	width: 25px;
+	color: #222;
+	border: 1px solid #222222;
+	top: -10px;
+	right: 50px!important;
+}
+.mean-container a.meanmenu-reveal span {
+	background: #222222;
+	margin: 4px 0px;
+}
+.sticky-menu .mean-container a.meanmenu-reveal {
+	color: #fff;
+	border: 1px solid #fff;
+}
+.sticky-menu .mean-container a.meanmenu-reveal span {
+	background: #ffffff;
+}
+.mean-container .mean-nav ul li{
+	background: #fff;
+}
+.mean-container .mean-nav ul li a:hover {
+	background: none;
+}
+.mean-container .mean-nav ul li a {
+	color: #222222;
+	border: none;
+}
+.mean-container .mean-nav ul li:hover> a {
+	color: #aaa;
+}
+.mean-container .mean-nav ul li ul li a {
+	color: #222222;
+	border: none;
+}
+.mean-container .mean-nav ul li a.mean-expand {
+	font-size: 25px !important;
+	color: #555;
+	border: none!important;
+	background: none;
+}
+.mean-container .mean-nav ul li a.mean-expand:hover {
+	background: #aaa;
+	color: #fff;
+}
+.sticky-menu .mean-container .mean-nav ul li{
+	background: #aaa;
+}
+.sticky-menu .mean-container .mean-nav ul li a {
+	color: #222222;
+}
+.sticky-menu .mean-container .mean-nav ul li:hover> a {
+	color: #fff;
+}
+.sticky-menu .mean-container .mean-nav ul li a.mean-expand:hover {
+	background: #fff;
+	color: #222;
+}
+/*==============----------------------------- 1. SLIDER AREA CSS -----------------------------================*/
+.slider-area{
+}
+
+.single-slider{
+	height: 600px;
+	padding-top: 100px;
+	background: #FBFBFB;
+
+}
+
+.slider-text h1{
+	font-size: 55px;
+	font-weight: 700;
+	margin-bottom: 22px;
+	color: #555555;
+}
+.slider-text h1 span {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    line-height: 0.5;
+}
+.slider-text h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #aaaaaa;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+ .button {
+    font-size: 14px;
+    color: #555555;
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid #555555;
+    transition: all .3s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.active,
+.button:hover{
+	background: #555555;
+	color: #fff;
+}
+.active:hover{
+	background: #fff;
+	color: #555;
+}
+/*==============----------------------------- 1. aboutme AREA CSS -----------------------------================*/
+.section-title{
+	margin-bottom: 30px;
+}
+.section-title h2{
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+.section-title h2:before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 125px;
+    height: 2px;
+    background: #555555;
+}
+.section-title h2:after {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 0px;
+    right: 0;
+    margin: auto;
+    width: 80px;
+    height: 1px;
+    background: #555555;
+}
+.about-img{
+	position: relative;
+	padding-left: 120px;
+	box-shadow: 0 0 0 0.5;
+	
+}
+.about-img img{
+	box-shadow: 0 15px 20px rgb(0 0 0 / 10%);
+}
+.about-img:before {
+    position: absolute;
+    content: "";
+    right: -150px;
+    bottom: 0;
+    z-index: 999;
+    width: 30px;
+    height: 80%;
+    background: #aaaaaa;
+}
+.about-img:after {
+    position: absolute;
+    content: "";
+    right: -150px;
+    bottom: -20px;
+    z-index: 999;
+    width: 60%;
+    height: 20px;
+    background: #aaaaaa;
+}
+.about-content p{
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 30px;
+	margin-bottom: 40px;
+	text-align: justify;
+}
+/*==============----------------------------- 1. services AREA CSS -----------------------------================*/
+.services-area{
+	background:#fafafa;
+}
+.services-active .slick-dots{
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.services-active .slick-dots li{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 3px solid #555555;
+  display: inline-block;
+  margin: 2px;
+}
+.services-active .slick-dots li button {
+  display: none;
+}
+.services-active .slick-dots li.slick-active{
+  background: #aaaaaa;
+  border: none;
+}
+
+.single-service{
+    background: #ffffff none repeat scroll 0 0;
+    padding: 50px 20px 45px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.services-active .slick-slide.slick-current .single-service,
+.single-service:hover{
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+	z-index: 2;
+}
+.single-service-icon i {
+    font-size: 40px;
+}
+
+.single-service-text {
+    margin-left: 20px;
+}
+
+ h3.heading {
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.single-service-text p {
+    font-size: 16px;
+}
+/*==============----------------------------- 1. portfolio AREA CSS -----------------------------================*/
+
+.portfolio-img img{
+	width:100%;
+}
+.portfolio-menu li {
+	display: inline-block;
+}
+.portfolio-menu li button {
+	font-size: 14px;
+	font-weight: 500;
+	background: none;
+	border: 0;
+	font-weight: 500;
+	margin: 0 3px;
+	letter-spacing: 2px;
+	padding: 5px 20px;
+	border: 2px solid #555555;
+	cursor: pointer;
+	color: #555555;
+	transition: .3s;
+	outline: none;
+}
+.portfolio-menu li:hover button{
+	color:#ffffff;
+	background: #555555;
+}
+.single-item{
+	position: relative;
+}
+.portfolio-img-content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #aaaaaa;
+  transition: .5s;
+  cursor: pointer;
+  transform: scaleY(0);
+  transform-origin: center center;
+  opacity: 0;
+  visibility: hidden;
+}
+.single-item:hover .portfolio-img-content{
+  transform: scaleY(1);
+  opacity: .9;
+  visibility: visible;
+}
+.img-content a i {
+  	color: #fff;
+	font-size: 45px;
+	margin-bottom: 30px;
+}
+.img-content h3 a{
+	font-size: 24px;
+	color: #555555;
+	margin-bottom: 15px;
+	line-height: 0;
+	transition: all.5s;
+}
+.img-content h3:hover a{
+	color: #fff;
+}
+.img-content p{
+  font: 14px;
+  margin:0;
+  color: #fff;
+}
+/*==============----------------------------- 1. team AREA CSS -----------------------------================*/
+.team-members{
+	width: 100%;
+	height: 330px;
+	perspective: 600px;
+	transition: .5s;
+	overflow: hidden;
+}
+
+.member-img img{
+	width: 100%;
+}
+.team-members .member-img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:100%;
+	background: #555555;
+	backface-visibility: hidden;
+	transform: rotateX(0deg);
+	transition: .5s;
+}
+.team-members:hover .member-img{
+	transform: rotateX(-180deg);
+}
+.member-img{
+	width: 100%;
+}
+.team-members .member-content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:100%;
+	background: #222222;
+	backface-visibility: hidden;
+	transform: rotateX(180deg);
+	transition: .5s;
+}
+.team-members .member-content::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -50%;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.1);
+
+}
+.team-members:hover .member-content{
+	transform: rotateX(0deg);
+}
+
+.member-content .member-details{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	box-shadow: border-box;
+}
+.member-content .member-details h3{
+	margin: 0;
+	padding: 0;
+	color:#fff;
+
+}
+.member-content .member-details h3 span{
+	color: #aaaaaa;
+	font-size: 16px;
+}
+
+.member-social-icons{
+	padding:10px 0;
+}
+.member-social-icons a{
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	text-align: center;
+	background: #262626;
+	color:#fff;
+	border-radius: 50%;
+	line-height: 36px;
+}
+.member-social-icons a:hover{
+	background: #aaaaaa;
+}
+/*==============----------------------------- 1. testimonials AREA CSS -----------------------------================*/
+.single-testimonial{
+	padding: 15px;
+}
+.testimonial-active .slick-dots{
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.testimonial-active .slick-dots li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #aaa;
+    display: inline-block;
+    margin: 2px;
+}
+.testimonial-active .slick-dots li button {
+  display: none;
+}
+.testimonial-active .slick-dots li.slick-active{
+  background: #555555;
+  border: none;
+}
+.client-content-wraper {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    padding: 52px 40px 62px;
+}
+.client-avatar {
+    display: inline-block;
+    height: 110px;
+    left: 70px;
+    margin-bottom: -55px;
+    position: relative;
+    width: 110px;
+    position: relative;
+}
+.client-avatar:after {
+    content: url("../img/quote.png");
+    position: absolute;
+    right: 2px;
+    top: 10px;
+}
+.client-avatar img {
+    border: 3px solid #aaaaaa;
+    border-radius: 50%;
+    width: 100%;
+}
+.client-content h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.client-content h6 {
+    color: #aaaaaa;
+    font-weight: 500;
+    margin-bottom: 19px;
+}
+.client-content p {
+    font-style: italic;
+    line-height: 25px;
+    margin-bottom: 0;
+    text-align: left;
+}
+/*==============----------------------------- 1. blog AREA CSS -----------------------------================*/
+.single-post{
+	padding: 10px;
+	
+}
+.blog-post{	
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+	transition: .3s;
+}
+.blog-post:hover{
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+.blog-img img {
+    display: block;
+    width: 100%;
+    height: 260px;
+}
+.blog-content{
+	padding: 25px 20px;
+}
+.blog-upper h3 {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 22px;
+}
+.blog-upper h3:hover a{
+	color: #222222;
+}
+.blog-upper p{
+	margin-bottom: 40px;
+}
+.post-footer {
+    overflow: hidden;
+}
+.post-button{
+	float: left;
+}
+.post-button a{
+	font-size: 12px;
+	font-weight: 400;
+	color: #555555;
+	text-transform: uppercase;
+	line-height: 1px;
+}
+.post-social-share{
+	float: right;
+}
+.post-social-share li{
+	display: inline-block;
+	padding: 0 7px;
+}
+.post-social-share li a{
+	font-size: 12px;
+	color: #aaaaaa;
+	transition: all.3s;
+}
+.post-social-share li:hover a{
+	color: #555555;
+}
+/*==============----------------------------- 1. beadcrumb AREA CSS -----------------------------================*/
+.beadcrumb-area{
+	height: 600px;
+	background-size: cover;
+}
+.beadcrumb-title h2	{
+	text-transform: uppercase;
+}
+.beadcrumb-title p{
+	font-size: 22px;
+	font-weight: 300;
+}
+.breadcrumb {
+	background: none;
+	display: block;
+}
+.breadcrumb-item{
+	display: inline-block;
+}
+.breadcrumb-item a{
+	color: #555555;
+	transition: all.3s;
+}
+.breadcrumb-item a:hover{
+	color: #aaaaaa;
+}
+.breadcrumb-item.active{
+	background: none;
+	color: #aaaaaa;
+}
+/*==============----------------------------- 1. our-details AREA CSS -----------------------------================*/
+.single-details{
+	padding: 70px;
+}
+.single-details p {
+    font-size: 15px;
+    line-height: 27px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 23px;
+}
+.details-bg{
+	background: #aaaaaa;
+}
+/*==============----------------------------- 1. counter AREA CSS -----------------------------================*/
+.counter-area{
+	background: #555555;
+}
+.counter-area-2{
+	background: #f6f6f6;
+}
+.counter-icon i{
+	color: #ffffff;
+	font-size: 58px;
+}
+.counter-area-2 .counter-icon i{
+	color: #222;
+}
+.counter-content span{
+	color: #fff;
+	font-size: 48px;
+	font-weight: 500;
+	letter-spacing: 10px;
+	margin-top: 10px;
+	display: block;
+}
+.counter-area-2 .counter-content span{
+	color: #222;
+}
+
+.counter-content h3 {
+    line-height: 1;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #fff;
+}
+.counter-area-2 .counter-content h3 {
+    color: #222;
+}
+/*==============----------------------------- 1. our team AREA CSS -----------------------------================*/
+.team-img img{
+	width: 100%;
+}
+.team-content h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.subtitle p{
+	font-size: 16px;
+}
+.team-social-profiles a i {
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background: #ddd;
+    color: #555;
+    margin: 0 5px;
+    transition: all.3s;
+}
+.team-social-profiles a:hover i{
+	background: #555555;
+	color: #ffffff;
+}
+/*==============-------------------------- 1. our awesome client AREA CSS -----------------------================*/
+.testimonial-content {
+	background: #aaaaaa;
+	padding: 20px;
+	position: relative;
+}
+.testimonial-content::after {
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    left: 80px;
+    border-top: 10px solid #aaaaaa;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+.my-awesome-client-area .testimonial-content::after {
+    border-top: 10px solid #ffffff;
+}
+.testimonial-content i{
+	font-size: 24px;
+	color: #ffffff;
+}
+.my-awesome-client-area .testimonial-content i{
+	color: #222222;
+}
+.testimonial-content p{
+	padding-left: 30px;
+	color: #ffffff;
+}
+.my-awesome-client-area .testimonial-content p{
+	color: #555;
+}
+.testimonial-meta img{
+	padding-left: 40px;
+	padding-right: 20px;
+}
+.light-bg {
+    background-color: #f6f6f6;
+}
+.my-awesome-client-area .testimonial-content{
+	background: #ffffff;
+}
+/*
+/*==============----------------------------- 1. brands AREA CSS -----------------------------================*/
+.brand-area{
+	background: #f6f6f6;
+}
+/*==============----------------------------- 1. about-me1 AREA CSS -----------------------------================*/
+.about-me1-img img{
+	width: 100%;
+}
+.about-me1-content {
+    background: #f6f6f6;
+    padding: 47px 40px;
+}
+.about-me1-content h3 {
+    font-weight: 500;
+    line-height: 0.7;
+}
+.about-me1-content p span {
+    font-size: 15px;
+    display: block;
+    margin-bottom: 15px;
+}
+.about-me1-content p{
+	line-height: 25px;
+}
+/*==============----------------------------- 1. progress AREA CSS -----------------------------================*/
+.progress {
+    height: 20px;
+    padding-top: 5px;
+    background: #f6f6f6;
+    border-radius: 0 10px 10px 0;
+    overflow: visible;
+}
+.progress-bar {
+	height: 10px;
+    border-radius: 0 5px 5px 0;
+    background-color: #222222;
+    position: relative;
+    overflow: visible;
+    animation: animate 1s ease 0s 1 normal;    
+    opacity: 1;
+}
+@keyframes animate{
+	0%{
+		width: 0%;
+	}
+}
+.progress-bar .percent {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #333;
+    border-radius: 5px;
+    top: -45px;
+    right: -10px;
+}
+
+.progress .progress-bar .percent::after {
+    position: absolute;
+    content: '';
+    top: 30px;
+    left: 10px;
+    border-top: 5px solid #333;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+.single-progress {
+    margin-bottom: 40px;
+}
+/*==============----------------------------- 1. Hire me AREA CSS -----------------------------================*/
+.hire-me-area{
+	background: #aaa;
+	height: 200px;
+}
+.hire-me-button {
+    padding-top: 14px;
+}
+.hire-me-content h3 {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 2px;
+}
+.hire-me-button a.button{
+	color: #000;
+	border-color: #222;
+}
+.hire-me-button a.button:hover{
+	background: #222;
+	color: #ffffff;
+}
+/*==============----------------------------- 1. contace AREA CSS -----------------------------================*/
+.social-contact-icon i {
+    font-size: 40px;
+    margin-bottom: 20px;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    line-height: 70px;
+    border: 1px solid #222;
+    border-radius: 50%;
+    transition: all.3s;
+}
+.social-contact:hover .social-contact-icon i{
+	background: #222;
+	color: #ffffff;
+}
+.social-contact{
+	background: #ffffff;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+	padding: 50px;
+	transition: all.3s;
+}
+.social-contact:hover{
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+.contaict-form input {
+    width: 100%;
+    margin-bottom: 40px;
+    height: 50px;
+    padding: 10px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    transition: all.3s;
+}
+.contaict-form input:hover,
+.contaict-form textarea:hover {
+    border-bottom: 2px solid #000000;
+}
+.contaict-form textarea {
+    width: 100%;
+    padding: 10px;
+    color: #555;
+    border: 1px solid #aaa;
+    transition: all.3s;
+}
+/*==============----------------------------- 1. FOOTER AREA CSS -----------------------------================*/
+.footer-area{
+	background: #222;
+}
+.footer-title h3{
+	color: #fff;
+	margin-bottom: 30px;
+}
+.footer-content p {
+    color: #fff;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.footer-form input {
+    border: none;
+    height: 45px;
+    background: #fff;
+    padding: 9px;
+    width: 100%;
+    position: relative;
+    color: #555555;
+}
+.footer-form button {
+    position: absolute;
+    right: 15px;
+    height: 45px;
+    width: 20%;
+    border: none;
+    background: #aaa;
+}
+.footer-bottom{
+	border-top: 1px solid #555 ;
+	height: 70px;
+}
+.copyright-text p{
+	color: #fff;
+	margin-top: 20px;
+}
+.footer-form button {
+    font-size: 30px;
+    color: #fff;
+}
+/*==============----------------------------- 1. STICKEY HEADER AREA CSS --------------------------============*/
+.sticky-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background: #aaaaaa;
+    transition: .5s;
+}
+/*==============----------------------------- 1. SCROLLUP AREA CSS ---------------------------================*/
+#scrollUp {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    background: #aaaaaa;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+}
+#scrollUp:hover{
+	background: #000000;
+}
+/*==============----------------------------- 1. aboutme AREA CSS -----------------------------================*/
